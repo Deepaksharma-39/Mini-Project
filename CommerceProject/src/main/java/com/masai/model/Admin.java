@@ -2,6 +2,7 @@ package com.masai.model;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -26,6 +27,7 @@ public class Admin {
 	private String name;
 	
 	@Email
+	@Column(unique = true)
 	private String email;
 	
 	@Size(min = 10,max = 10)

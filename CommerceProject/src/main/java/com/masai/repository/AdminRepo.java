@@ -8,4 +8,5 @@ import com.masai.model.Admin;
 @Repository
 public interface AdminRepo extends JpaRepository<Admin,Integer> {
 
+	public Admin findByEmail(String email);
 }
