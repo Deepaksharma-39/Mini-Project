@@ -1,4 +1,4 @@
-package com.masai.controller;
+package com.masai.model;
 
 import java.time.LocalDateTime;
 
@@ -12,17 +12,14 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 public class UserSession {
 
-	public UserSession(int customerId, String key, LocalDateTime now) {
-		// TODO Auto-generated constructor stub
-	}
+	
 	@Id
 	@Column(unique = true)
 	private Integer userId;
 	private String uuid;
 	private LocalDateTime localDateTime;
-
 }

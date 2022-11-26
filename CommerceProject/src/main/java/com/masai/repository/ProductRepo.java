@@ -8,4 +8,5 @@ import com.masai.model.Products;
 @Repository
 public interface ProductRepo extends JpaRepository<Products,Integer> {
 
+	
 }
